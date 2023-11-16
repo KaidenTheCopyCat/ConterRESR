@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonStarRealmsOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Star realms one player"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonStarRealmsTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Star realms Two players"
+        android:layout_below="@id/buttonStarRealmsOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonResArcana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Res Arcana"
+        android:layout_below="@id/buttonStarRealmsTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

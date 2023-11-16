@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResArcanaActivity">
+
+
+    <Button
+        android:id="@+id/deathAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#333035"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/imgdeath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calmAdd"
+        app:layout_constraintTop_toBottomOf="@+id/lifeSub" />
+
+    <Button
+        android:id="@+id/deathSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="95dp"
+        android:backgroundTint="#333035"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/resReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calmSub"
+        app:layout_constraintTop_toBottomOf="@+id/imgdeath" />
+
+    <ImageView
+        android:id="@+id/imggold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/goldSub"
+        app:layout_constraintEnd_toStartOf="@+id/resReset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goldAdd"
+        app:srcCompat="@mipmap/regold_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/counterGold"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imggold"
+        app:layout_constraintStart_toStartOf="@+id/imggold" />
+
+    <ImageView
+        android:id="@+id/imgelan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/elanSub"
+        app:layout_constraintEnd_toStartOf="@+id/imglife"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elanAdd"
+        app:srcCompat="@mipmap/reelan_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/counterElan"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgelan"
+        app:layout_constraintStart_toStartOf="@+id/imgelan" />
+
+    <ImageView
+        android:id="@+id/imglife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/lifeSub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgelan"
+        app:layout_constraintTop_toBottomOf="@+id/lifeAdd"
+        app:srcCompat="@mipmap/relife_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/counterLife"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imglife"
+        app:layout_constraintStart_toStartOf="@+id/imglife" />
+
+    <ImageView
+        android:id="@+id/imgdeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/deathSub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgcalm"
+        app:layout_constraintTop_toBottomOf="@+id/deathAdd"
+        app:srcCompat="@mipmap/redeath_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/counterDeath"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgdeath"
+        app:layout_constraintStart_toStartOf="@+id/imgdeath" />
+
+    <ImageView
+        android:id="@+id/imgcalm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/calmSub"
+        app:layout_constraintEnd_toStartOf="@+id/imgdeath"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calmAdd"
+        app:srcCompat="@mipmap/recalm_background"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/counterCalm"
+        android:layout_width="72dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcalm"
+        app:layout_constraintStart_toStartOf="@+id/imgcalm" />
+
+    <Button
+        android:id="@+id/elanAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="107dp"
+        android:backgroundTint="#880606"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/imgelan"
+        app:layout_constraintEnd_toStartOf="@+id/lifeAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calmAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="107dp"
+        android:backgroundTint="#1C67B8"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/imgcalm"
+        app:layout_constraintEnd_toStartOf="@+id/deathAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elanSub" />
+
+    <Button
+        android:id="@+id/calmSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1C67B8"
+        android:text="-1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/goldAdd"
+        app:layout_constraintEnd_toStartOf="@+id/deathSub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgcalm" />
+
+    <Button
+        android:id="@+id/goldAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="263dp"
+        android:backgroundTint="#CC9E14"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/imggold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calmSub" />
+
+    <Button
+        android:id="@+id/goldSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#CC9E14"
+        android:text="-1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imggold" />
+
+    <Button
+        android:id="@+id/lifeAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="68dp"
+        android:backgroundTint="#299C0A"
+        android:text="+1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/imglife"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/elanAdd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lifeSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#299C0A"
+        android:text="-1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/deathAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/elanSub"
+        app:layout_constraintTop_toBottomOf="@+id/imglife" />
+
+    <Button
+        android:id="@+id/elanSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#880606"
+        android:text="-1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/calmAdd"
+        app:layout_constraintEnd_toStartOf="@+id/lifeSub"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgelan" />
+
+    <Button
+        android:id="@+id/resReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="97dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imggold"
+        app:layout_constraintTop_toBottomOf="@+id/deathSub" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
