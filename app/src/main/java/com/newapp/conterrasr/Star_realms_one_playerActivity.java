@@ -54,7 +54,7 @@ public class Star_realms_one_playerActivity extends AppCompatActivity {
         buttonAdd10.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                counter+=5;
+                counter+=10;
                 textCounterSR1.setText(String.valueOf(counter));
             }
         });
@@ -90,7 +90,7 @@ public class Star_realms_one_playerActivity extends AppCompatActivity {
                     counter-=10;
                     textCounterSR1.setText(String.valueOf(counter));
                 }
-                else if (counter <5  && counter >0){
+                else if (counter <10  && counter >0){
                     counter =10;
                     textCounterSR1.setText(String.valueOf(counter));
                 }

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonStarOne = findViewById(R.id.buttonStarRealmsOne);
         Button buttonStarTwo = findViewById(R.id.buttonStarRealmsTwo);
         Button buttonThreeCounters = findViewById(R.id.buttonResArcana);
+        Button buttonDice = findViewById(R.id.buttonDice);
 
         buttonStarOne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,8 +39,15 @@ public class MainActivity extends AppCompatActivity {
         buttonThreeCounters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Switch to ThreeCountersActivity
                 Intent intent = new Intent(MainActivity.this, ResArcanaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonDice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ResArcanaActivity.class); // change to dice activity
                 startActivity(intent);
             }
         });
