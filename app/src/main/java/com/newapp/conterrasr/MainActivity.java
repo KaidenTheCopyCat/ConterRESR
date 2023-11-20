@@ -15,13 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonStarOne = findViewById(R.id.buttonStarRealmsOne);
         Button buttonStarTwo = findViewById(R.id.buttonStarRealmsTwo);
-        Button buttonThreeCounters = findViewById(R.id.buttonResArcana);
+        Button buttonResArcana = findViewById(R.id.buttonResArcana);
         Button buttonDice = findViewById(R.id.buttonDice);
 
         buttonStarOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Switch to OneCounterActivity
                 Intent intent = new Intent(MainActivity.this, Star_realms_one_playerActivity.class);
                 startActivity(intent);
             }
@@ -30,13 +29,12 @@ public class MainActivity extends AppCompatActivity {
        buttonStarTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Switch to TwoCountersActivity
                 Intent intent = new Intent(MainActivity.this, Star_realms_two_playerActivity.class);
                 startActivity(intent);
             }
         });
 
-        buttonThreeCounters.setOnClickListener(new View.OnClickListener() {
+        buttonResArcana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ResArcanaActivity.class);
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         buttonDice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ResArcanaActivity.class); // change to dice activity
+                Intent intent = new Intent(MainActivity.this, DiceActivity.class);
                 startActivity(intent);
             }
         });
